@@ -18,13 +18,31 @@
     btn.remove();
   }
 
+  function firstGift(){
+    var openGiftBtn = document.getElementById("content");
+    openGiftBtn.setAttribute("hidden", true);
+    var partyStart = document.getElementById("party");
+    partyStart.removeAttribute("hidden");
+    var audio = document.getElementById("partyMusic");
+    audio.play();
+  }
+
+  function exitParty(){
+    var party = document.getElementById("party");
+    party.setAttribute("hidden", true);
+    var cont = document.getElementById("content");
+    cont.removeAttribute("hidden");
+    var audio = document.getElementById("partyMusic");
+    audio.pause();
+  }
+
   function secondGift() {
     let openGiftBtn = document.getElementById("content");
     let imageContainer = document.createElement("div");
     imageContainer.className = "image-container2";
 
     let image = document.createElement("img");
-    image.src = "secondgift.png";
+    image.src = "img/secondgift.png";
     let closeButton = document.createElement("button");
     closeButton.textContent = "X";
     closeButton.className = "close-btn";
@@ -40,6 +58,14 @@
 
     
     openGiftBtn.setAttribute("hidden", true);
+  }
+
+  function thirdGift(){
+    let openGiftBtn = document.getElementById("content");
+    let game = document.getElementById("game-content");
+
+    openGiftBtn.setAttribute("hidden", true);
+    game.removeAttribute("hidden");
   }
 
     

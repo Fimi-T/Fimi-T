@@ -1,7 +1,20 @@
 *{
     padding: 0;
-    background-color: black;
+    margin: 0;
 }
+body{
+  background-color: black;
+}
+button{
+  cursor: pointer;
+}
+
+.startTitle{
+  color: white; 
+  font-size: 1.5rem; 
+  text-align: center;
+}
+
 #hero{
     position: relative;
 }
@@ -16,6 +29,7 @@
 #hero button{
     width: 10em;
     border-style: none;
+    background-color: transparent;
 }
 #hero button img{
     width: 100%;
@@ -46,6 +60,9 @@
     background-color: rebeccapurple;
     font-size: 1.5rem;
     margin: 0;
+  }
+  #content button{
+    background-color: transparent;
   }
   .image-container {
     position: fixed;
@@ -100,4 +117,116 @@
     top: 50%;
     right: -50%;
 }
+}
+.party-content img{
+  width: 20%;
+}
+.party-bass1{
+  float: left;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+}
+.party-ball{
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+}
+.party-bass2{
+  float: right;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+}
+.party-char1{
+  position: absolute;
+  margin-top: 5rem;
+  background-color: transparent;
+}
+.party-char2{
+  position: absolute;
+  z-index: 20;
+  right: 20%;
+  margin-top: 5rem;
+  background-color: transparent;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes shake2 {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-100px, -200px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(300px, 200px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-300px, 100px) rotate(0deg); }
+  70% { transform: translate(300px, 100px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(100px, 200px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#confetti{
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  z-index: 100;
+  margin: auto;
+  display: block;
+  animation: shake2 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.blink {
+  animation: blinker 0.25s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.exitBtn {
+  z-index: 200;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  left: 0px; 
+  width: 10%;
+  border-style: none;
+  background-color: black;
+}
+
+.exitBtn img{
+  width: 100%;
+}
+
+#firstGift, #secondGift, #thirdGift{
+  background-color: transparent;
+  border-style: none;
+}
+.card{
+  background-color: transparent;
 }
